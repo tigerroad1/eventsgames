@@ -1,14 +1,12 @@
 {
-    "images": [
-        {
-            "url": "https://cdn.pixabay.com/photo/2024/02/16/06/18/cat-8576777_640.jpg",
-            "title": "Stratégie Militaire",
-            "description": "Plateau de jeu d'échecs représentant une stratégie militaire complexe"
-        },
-        {
-            "url": "https://cdn.pixabay.com/photo/2024/02/16/06/18/cat-8576777_640.jpg", 
-            "title": "Carte de Stratégie",
-            "description": "Carte ancienne illustrant une stratégie de découverte et d'exploration"
-        }
-    ]
+  "images": [
+    {
+      "url": "https://example.com/image1.jpg",
+      "title": "Image 1"
+    },
+    {
+      "url": "https://example.com/image2.jpg",
+      "title": "Image 2"
+    }
+  ]
 }
