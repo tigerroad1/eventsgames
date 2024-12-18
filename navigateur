@@ -1,0 +1,26 @@
+    {
+        name = "IGN",
+        url = "https://www.ign.com/",
+        description = "Actualités et critiques de jeux vidéo"
+    },
+    {
+        name = "Jeuxvideo.com", 
+        url = "https://www.jeuxvideo.com/",
+        description = "Média français de référence"
+    },
+    {
+        name = "Steam", 
+        url = "https://store.steampowered.com/",
+        description = "Plateforme de distribution de jeux PC"
+    },
+    {
+        name = "Twitch", 
+        url = "https://www.twitch.tv/directory/game/",
+        description = "Streaming de jeux vidéo"
+    },
+    {
+        name = "GameSpot", 
+        url = "https://www.gamespot.com/",
+        description = "Actualités et critiques de jeux"
+    }
+}
