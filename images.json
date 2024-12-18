@@ -1,14 +1,14 @@
 {
     "images": [
         {
-            "url": "https://raw.githubusercontent.com/tigerroad1/eventsgames/main/image1.jpg",
-            "title": "Première image de stratégie",
-            "description": "Un aperçu de notre jeu de stratégie"
+            "url": "https://pixabay.com/get/g1aa78375db7d5c5c5f2a5f5a5b6d5a5e5b5c5d5/war-chess-board-game-strategy-military-conflict-1993455_1280.jpg",
+            "title": "Stratégie Militaire",
+            "description": "Plateau de jeu d'échecs représentant une stratégie militaire complexe"
         },
         {
-            "url": "https://raw.githubusercontent.com/tigerroad1/eventsgames/main/image2.jpg",
-            "title": "Deuxième image de stratégie",
-            "description": "Un autre angle de notre jeu"
+            "url": "https://pixabay.com/get/g9f5408f50141c7a1ee2a1e5a5b6d5a5e5b5c5d5/map-old-antique-treasure-map-1850469_1280.jpg", 
+            "title": "Carte de Stratégie",
+            "description": "Carte ancienne illustrant une stratégie de découverte et d'exploration"
         }
     ]
 }
