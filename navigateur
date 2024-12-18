@@ -1,26 +1,39 @@
-    {
-        name = "IGN",
-        url = "https://www.ign.com/",
-        description = "Actualités et critiques de jeux vidéo"
-    },
-    {
-        name = "Jeuxvideo.com", 
-        url = "https://www.jeuxvideo.com/",
-        description = "Média français de référence"
-    },
-    {
-        name = "Steam", 
-        url = "https://store.steampowered.com/",
-        description = "Plateforme de distribution de jeux PC"
-    },
-    {
-        name = "Twitch", 
-        url = "https://www.twitch.tv/directory/game/",
-        description = "Streaming de jeux vidéo"
-    },
-    {
-        name = "GameSpot", 
-        url = "https://www.gamespot.com/",
-        description = "Actualités et critiques de jeux"
-    }
+{
+    "Navigateur": [
+        {
+            "title": "IGN",
+            "description": "Actualités et critiques de jeux vidéo",
+            "developer": "IGN Entertainment",
+            "releaseYear": 2023,
+            "logo": "data:image/jpeg;base64,"
+        },
+        {
+            "title": "Jeuxvideo.com",
+            "description": "Média français de référence",
+            "developer": "Webedia",
+            "releaseYear": 1997,
+            "logo": "data:image/jpeg;base64,"
+        },
+        {
+            "title": "Steam",
+            "description": "Plateforme de distribution de jeux PC",
+            "developer": "Valve Corporation",
+            "releaseYear": 2003,
+            "logo": "data:image/jpeg;base64,"
+        },
+        {
+            "title": "Twitch",
+            "description": "Streaming de jeux vidéo",
+            "developer": "Amazon",
+            "releaseYear": 2011,
+            "logo": "data:image/jpeg;base64,"
+        },
+        {
+            "title": "GameSpot",
+            "description": "Actualités et critiques de jeux",
+            "developer": "Red Ventures",
+            "releaseYear": 1996,
+            "logo": "data:image/jpeg;base64,"
+        }
+    ]
 }
