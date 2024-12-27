@@ -1,0 +1,94 @@
+{
+    "consoles": [
+        {
+            "name": "PlayStation 5",
+            "manufacturer": "Sony",
+            "releaseDate": "2020-11-12",
+            "platforms": ["PlayStation 5", "PlayStation 4"],
+            "url": "https://www.playstation.com/en-us/ps5/",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "La PlayStation 5 est la console de nouvelle génération de Sony, offrant des graphismes époustouflants, un temps de chargement ultra-rapide et un gameplay immersif avec son manette DualSense."
+        },
+        {
+            "name": "Xbox Series X",
+            "manufacturer": "Microsoft",
+            "releaseDate": "2020-11-10",
+            "platforms": ["Xbox Series X", "Xbox One"],
+            "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "La Xbox Series X est la console la plus puissante de Microsoft, conçue pour des performances exceptionnelles avec des graphismes 4K, un chargement ultra-rapide et un large éventail de jeux."
+        },
+        {
+            "name": "Lenovo Legion 5 Pro (PC Gamer)",
+            "manufacturer": "Lenovo",
+            "releaseDate": "2021-02-01",
+            "platforms": ["Windows 10", "Windows 11"],
+            "url": "https://www.lenovo.com/us/en/laptops/legion/legion-5/Lenovo-Legion-5-Pro-15-inch-AMD-Gaming-Laptop-82JQ/p/82JQ001HUS",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "Le Lenovo Legion 5 Pro est un PC portable gaming haut de gamme, équipé d'un processeur puissant et d'une carte graphique dédiée, offrant une expérience de jeu fluide sur un écran 16:10 QHD."
+        },
+        {
+            "name": "Nintendo Switch 2",
+            "manufacturer": "Nintendo",
+            "releaseDate": "2025-03-01",
+            "platforms": ["Nintendo Switch 2"],
+            "url": "https://www.nintendo.com/switch-2/",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "La Nintendo Switch 2 promet d'être la console hybride de nouvelle génération avec des améliorations de performance et de graphismes tout en conservant sa capacité à être utilisée en mode portable et sur TV."
+        },
+        {
+            "name": "Nintendo Switch",
+            "manufacturer": "Nintendo",
+            "releaseDate": "2017-03-03",
+            "platforms": ["Nintendo Switch", "Nintendo Switch Lite"],
+            "url": "https://www.nintendo.com/switch/",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "La Nintendo Switch est une console hybride qui peut être utilisée comme console de salon ou portable, offrant une grande flexibilité et une vaste bibliothèque de jeux exclusifs."
+        },
+        {
+            "name": "Steam Deck",
+            "manufacturer": "Valve",
+            "releaseDate": "2022-02-25",
+            "platforms": ["Steam", "PC", "Linux"],
+            "url": "https://www.steampowered.com/steamdeck",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "Le Steam Deck est une console portable de Valve qui permet de jouer à vos jeux PC depuis Steam en mode portable. Elle offre des contrôles personnalisables et une performance de qualité PC."
+        },
+        {
+            "name": "Steam Deck (OLED)",
+            "manufacturer": "Valve",
+            "releaseDate": "2023-11-15",
+            "platforms": ["Steam", "PC", "Linux"],
+            "url": "https://www.steampowered.com/steamdeck-oled",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "Le Steam Deck OLED est une version améliorée du Steam Deck original, avec un écran OLED offrant des couleurs plus vives et un meilleur contraste, tout en conservant une expérience de jeu portable immersive."
+        },
+        {
+            "name": "GPD Win 3",
+            "manufacturer": "GPD",
+            "releaseDate": "2021-02-01",
+            "platforms": ["Windows 10", "Steam"],
+            "url": "https://www.gpd.hk/portfolio/gpd-win-3/",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "Le GPD Win 3 est un PC portable gaming compact avec un clavier rétractable et un écran tactile. Il permet de jouer à des jeux PC en déplacement tout en étant suffisamment puissant pour des performances de jeu."
+        },
+        {
+            "name": "Aya Neo",
+            "manufacturer": "AYA",
+            "releaseDate": "2021-01-12",
+            "platforms": ["Windows 10", "Steam", "Epic Games Store"],
+            "url": "https://www.ayaneo.com/",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "L'Aya Neo est une console portable Windows de gaming, offrant des performances de qualité PC dans un format compact. Elle permet de jouer à des jeux PC, Steam et Epic Games Store avec des graphismes impressionnants."
+        },
+        {
+            "name": "Playdate",
+            "manufacturer": "Panic",
+            "releaseDate": "2022-04-29",
+            "platforms": ["Playdate Games"],
+            "url": "https://play.date/",
+            "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
+            "description": "La Playdate est une console de jeu portable unique avec un écran noir et blanc, une manette manuelle, et des jeux originaux proposés sous forme de saisons. Elle apporte une expérience de jeu ludique et rétro."
+        }
+    ]
+}
