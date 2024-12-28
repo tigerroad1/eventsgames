@@ -1,0 +1,64 @@
+{
+  "video_game_media": [
+    {
+      "name": "IGN",
+      "description": "IGN est l'un des principaux sites d'actualités sur les jeux vidéo, les films, la télévision et la culture geek.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/35/Ign_logo.png",
+      "url": "https://www.ign.com"
+    },
+    {
+      "name": "GameSpot",
+      "description": "GameSpot propose des actualités, des tests, des vidéos et des guides sur les jeux vidéo.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/35/GameSpot_logo.png",
+      "url": "https://www.gamespot.com"
+    },
+    {
+      "name": "Polygon",
+      "description": "Polygon couvre les jeux vidéo, les films, les séries télévisées et la culture pop.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Polygon_logo.png",
+      "url": "https://www.polygon.com"
+    },
+    {
+      "name": "Eurogamer",
+      "description": "Eurogamer fournit des tests, des actualités et des analyses sur les jeux vidéo.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/7/79/Eurogamer_logo.png",
+      "url": "https://www.eurogamer.net"
+    },
+    {
+      "name": "Kotaku",
+      "description": "Kotaku est un blog consacré aux jeux vidéo et à la culture gamer.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Kotaku_logo.png",
+      "url": "https://kotaku.com"
+    },
+    {
+      "name": "Jeuxvideo.com",
+      "description": "Jeuxvideo.com est un site francophone leader sur les actualités et les tests de jeux vidéo.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Jeuxvideo.com_logo.png",
+      "url": "https://www.jeuxvideo.com"
+    },
+    {
+      "name": "Game Informer",
+      "description": "Game Informer est un magazine couvrant l'industrie du jeu vidéo avec des tests, des actualités et des vidéos.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/6/6d/GameInformer_logo.png",
+      "url": "https://www.gameinformer.com"
+    },
+    {
+      "name": "VG247",
+      "description": "VG247 offre des actualités, des tests et des guides sur les jeux vidéo.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e4/VG247_logo.png",
+      "url": "https://www.vg247.com"
+    },
+    {
+      "name": "PC Gamer",
+      "description": "PC Gamer se concentre sur les jeux PC, offrant des actualités, des tests et des guides.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a5/PC_Gamer_logo.png",
+      "url": "https://www.pcgamer.com"
+    },
+    {
+      "name": "Rock Paper Shotgun",
+      "description": "Rock Paper Shotgun est spécialisé dans les jeux PC avec des analyses et des critiques détaillées.",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/3/36/RockPaperShotgun_logo.png",
+      "url": "https://www.rockpapershotgun.com"
+    }
+  ]
+}
