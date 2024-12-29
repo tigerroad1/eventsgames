@@ -4,7 +4,6 @@
             "name": "PlayStation 5",
             "manufacturer": "Sony",
             "releaseDate": "2020-11-12",
-            "platforms": ["PlayStation 5", "PlayStation 4"],
             "url": "https://www.playstation.com/en-us/ps5/",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNuZVGa41U9Ff2jzkTSQQpK8mzQQsNlW8GyQ&s",
             "description": "La PlayStation 5 est la console de nouvelle génération de Sony, offrant des graphismes époustouflants, un temps de chargement ultra-rapide et un gameplay immersif avec son manette DualSense."
@@ -13,7 +12,6 @@
             "name": "Xbox Series X",
             "manufacturer": "Microsoft",
             "releaseDate": "2020-11-10",
-            "platforms": ["Xbox Series X", "Xbox One"],
             "url": "https://www.xbox.com/en-US/consoles/xbox-series-x",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLaRdx93zU3SVUVTyNWh877FMK6B_d2UkLfw&s",
             "description": "La Xbox Series X est la console la plus puissante de Microsoft, conçue pour des performances exceptionnelles avec des graphismes 4K, un chargement ultra-rapide et un large éventail de jeux."
@@ -22,7 +20,6 @@
             "name": "Lenovo Legion 5 Pro (PC Gamer)",
             "manufacturer": "Lenovo",
             "releaseDate": "2021-02-01",
-            "platforms": ["Windows 10", "Windows 11"],
             "url": "https://www.lenovo.com/us/en/laptops/legion/legion-5/Lenovo-Legion-5-Pro-15-inch-AMD-Gaming-Laptop-82JQ/p/82JQ001HUS",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpHo0B7IUNWo0K4zm6wAYuUyt5wvCSvw5rLQ&s",
             "description": "Le Lenovo Legion 5 Pro est un PC portable gaming haut de gamme, équipé d'un processeur puissant et d'une carte graphique dédiée, offrant une expérience de jeu fluide sur un écran 16:10 QHD."
@@ -31,7 +28,6 @@
             "name": "Nintendo Switch 2",
             "manufacturer": "Nintendo",
             "releaseDate": "2025-03-01",
-            "platforms": ["Nintendo Switch 2"],
             "url": "https://www.nintendo.com/switch-2/",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjPBjMTTdLS1FOmHIQmCJk5ExJemIxEt8nTg&s",
             "description": "La Nintendo Switch 2 promet d'être la console hybride de nouvelle génération avec des améliorations de performance et de graphismes tout en conservant sa capacité à être utilisée en mode portable et sur TV."
@@ -39,7 +35,6 @@
         {
             "name": "Nintendo Switch",
             "manufacturer": "Nintendo",
-            "releaseDate": "2017-03-03",
             "platforms": ["Nintendo Switch", "Nintendo Switch Lite"],
             "url": "https://www.nintendo.com/switch/",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRiPTf2UFD9d9aHLxaJyUfzZP6KqlxnkWv1w&s",
@@ -49,7 +44,6 @@
             "name": "Steam Deck",
             "manufacturer": "Valve",
             "releaseDate": "2022-02-25",
-            "platforms": ["Steam", "PC", "Linux"],
             "url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqluo5Nx9VPJ9sbskQKn-xrSQikXkNmuntzA&s",
             "logo": "data:image/jpeg;base64,/9j/base64_image_data_here...",
             "description": "Le Steam Deck est une console portable de Valve qui permet de jouer à vos jeux PC depuis Steam en mode portable. Elle offre des contrôles personnalisables et une performance de qualité PC."
@@ -58,7 +52,6 @@
             "name": "GPD Win 3",
             "manufacturer": "GPD",
             "releaseDate": "2021-02-01",
-            "platforms": ["Windows 10", "Steam"],
             "url": "https://www.gpd.hk/portfolio/gpd-win-3/",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHbj6fa8JNZ1OEPtUy4_TRmKZVM2VSxsbyLg&s",
             "description": "Le GPD Win 3 est un PC portable gaming compact avec un clavier rétractable et un écran tactile. Il permet de jouer à des jeux PC en déplacement tout en étant suffisamment puissant pour des performances de jeu."
@@ -67,7 +60,6 @@
             "name": "Aya Neo",
             "manufacturer": "AYA",
             "releaseDate": "2021-01-12",
-            "platforms": ["Windows 10", "Steam", "Epic Games Store"],
             "url": "https://www.ayaneo.com/",
             "logo": "data:image/jpeg;base64,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.",
             "description": "L'Aya Neo est une console portable Windows de gaming, offrant des performances de qualité PC dans un format compact. Elle permet de jouer à des jeux PC, Steam et Epic Games Store avec des graphismes impressionnants."
@@ -76,7 +68,6 @@
             "name": "Playdate",
             "manufacturer": "Panic",
             "releaseDate": "2022-04-29",
-            "platforms": ["Playdate Games"],
             "url": "https://play.date/",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmBQdP2S6GLJvFu_42Gs8yiSaOM3eFuXGNAg&s",
             "description": "La Playdate est une console de jeu portable unique avec un écran noir et blanc, une manette manuelle, et des jeux originaux proposés sous forme de saisons. Elle apporte une expérience de jeu ludique et rétro."
