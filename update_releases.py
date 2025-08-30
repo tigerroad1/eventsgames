@@ -2,8 +2,9 @@ import requests
 import json
 import os
 import subprocess
+import time
 
-# Credentials depuis env (ajoutez-les à GitHub Secrets)
+# Credentials depuis env
 CLIENT_ID = os.getenv('IGDB_CLIENT_ID')
 CLIENT_SECRET = os.getenv('IGDB_CLIENT_SECRET')
 GITHUB_TOKEN = os.getenv('GITHUB_TOKEN')
@@ -25,22 +26,29 @@ def fetch_releases(token):
         'Authorization': f'Bearer {token}',
         'Accept': 'application/json'
     }
-    # Filtre pour post-août 2025 à 2026
-    body = 'fields game.name, game.cover.url, game.url, date, platform.name; where date > 1743465600 & date < 1798761600; sort date asc; limit 500;'
-    response = requests.post('https://api.igdb.com/v4/release_dates', headers=headers, data=body)
+    # Filtre post-30 août 2025 à fin 2026
+    current_ts = 1756598400  # Approx 30 août 2025
+    end_ts = 1798761600  # 1er janv. 2027
+    body = f'fields name, cover.url, first_release_date, summary, involved_companies.company.name, platforms.name, url; where first_release_date > {current_ts} & first_release_date < {end_ts}; sort first_release_date asc; limit 500;'
+    response = requests.post('https://api.igdb.com/v4/games', headers=headers, data=body)
     return response.json()
 
 def update_json(data):
     releases = []
     for item in data:
-        platforms = [p['name'] for p in item.get('platform', [])]
-        image_url = item.get('game', {}).get('cover', {}).get('url', '') if 'cover' in item.get('game', {}) else ''
+        cover_url = item.get('cover', {}).get('url', '')
+        if cover_url:
+            cover_url = f'https:{cover_url.replace("t_thumb", "t_cover_big")}'
+        platforms = [p['name'] for p in item.get('platforms', [])]
+        companies = [c['company']['name'] for c in item.get('involved_companies', [])]
         releases.append({
-            'title': item['game']['name'],
-            'date': item['date'],  # Timestamp, convertissez si besoin
+            'title': item.get('name', ''),
+            'date': time.strftime('%Y-%m-%d', time.localtime(item.get('first_release_date', 0))),
+            'summary': item.get('summary', ''),
+            'companies': companies,
             'platforms': platforms,
-            'url': item['game'].get('url', ''),
-            'image': f'https:{image_url}' if image_url else ''
+            'url': item.get('url', ''),
+            'image': cover_url
         })
     with open('sorties_2025-2026.json', 'w', encoding='utf-8') as f:
         json.dump(releases, f, ensure_ascii=False, indent=4)
