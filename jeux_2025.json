@@ -15,7 +15,7 @@
     },
     {
       "title": "The Elder Scrolls VI",
-      "release_date": "2025-03-20",
+      "release_date": "2025-09-30",
       "platforms": [
         "Xbox Series X|S",
         "PC"
@@ -38,6 +38,32 @@
       "developer": "Team Cherry",
       "url": "https://www.hollowknight.com/silksong",
       "logo": "https://example.com/silksong_logo.jpg"
+    },
+    {
+      "title": "Starfield",
+      "release_date": "2025-04-15",
+      "platforms": [
+        "Xbox Series X|S",
+        "PC"
+      ],
+      "description": "Un RPG spatial développé par Bethesda Game Studios.",
+      "developer": "Bethesda Game Studios",
+      "url": "https://bethesda.net/en/game/starfield",
+      "logo": "https://example.com/starfield_logo.jpg"
+    },
+    {
+      "title": "Cyberpunk 2077: Phantom Liberty Expansion",
+      "release_date": "2025-02-28",
+      "platforms": [
+        "PlayStation 5",
+        "Xbox Series X|S",
+        "PC",
+        "Stadia"
+      ],
+      "description": "Une extension majeure pour Cyberpunk 2077.",
+      "developer": "CD Projekt Red",
+      "url": "https://www.cyberpunk.net/en/phantom-liberty",
+      "logo": "https://example.com/phantomliberty_logo.jpg"
     }
   ]
 }
