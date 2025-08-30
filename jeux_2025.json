@@ -1,3 +1,43 @@
 {
-  "games": []
+  "games": [
+    {
+      "title": "Grand Theft Auto VI",
+      "release_date": "2025-11-15",
+      "platforms": [
+        "PlayStation 5",
+        "Xbox Series X|S",
+        "PC"
+      ],
+      "description": "Le prochain épisode de la célèbre série GTA, avec un nouveau cadre et de nouvelles mécaniques de jeu.",
+      "developer": "Rockstar Games",
+      "url": "https://www.rockstargames.com/V",
+      "logo": "https://example.com/gta6_logo.jpg"
+    },
+    {
+      "title": "The Elder Scrolls VI",
+      "release_date": "2025-03-20",
+      "platforms": [
+        "Xbox Series X|S",
+        "PC"
+      ],
+      "description": "Le très attendu RPG de Bethesda Game Studios, qui se déroule dans une nouvelle province de Tamriel.",
+      "developer": "Bethesda Game Studios",
+      "url": "https://bethesda.net/en/game/elder-scrolls-vi",
+      "logo": "https://example.com/tes6_logo.jpg"
+    },
+    {
+      "title": "Hollow Knight: Silksong",
+      "release_date": "2025-05-01",
+      "platforms": [
+        "Nintendo Switch",
+        "PlayStation 5",
+        "Xbox Series X|S",
+        "PC"
+      ],
+      "description": "La suite du jeu d'aventure Metroidvania acclamé par la critique, Hollow Knight.",
+      "developer": "Team Cherry",
+      "url": "https://www.hollowknight.com/silksong",
+      "logo": "https://example.com/silksong_logo.jpg"
+    }
+  ]
 }
