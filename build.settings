@@ -1,0 +1,31 @@
+-- build.settings: Configuration de compilation
+-- Ce fichier est au format Lua standard pour Solar2D
+
+settings = {
+    orientation = {
+        default = "landscapeRight",
+        supported = {"landscapeLeft", "landscapeRight"},
+    },
+    iphone = {
+        xcassets = "Images.xcassets",
+        plist = {
+            UILaunchStoryboardName = "LaunchScreen",
+            UIStatusBarHidden = true,
+            UIPrerenderedIcon = true,
+        },
+    },
+    android = {
+        usesPermissions = {
+            "android.permission.INTERNET",
+        },
+    },
+    plugins = {
+        ["plugin.luafilesystem"] = {
+            publisherId = "com.coronalabs",
+        },
+    },
+    -- The excludeFiles section has been removed to ensure fonts and icons are included in the build.
+    -- excludeFiles = {
+    --     all = { "fonts/*", "icons/*" },
+    -- },
+}
