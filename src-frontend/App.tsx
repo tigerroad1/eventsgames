@@ -1,7 +1,8 @@
 import React from 'react';
 import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 import Viewport from './engine/Viewport';
-import { Layers, Settings } from 'lucide-react';
+import Outliner from './components/Outliner';
+import Inspector from './components/Inspector';
 
 const App: React.FC = () => {
   return (
@@ -16,15 +17,7 @@ const App: React.FC = () => {
         <PanelGroup direction="horizontal">
           {/* Left Sidebar (Explorer/Outliner) */}
           <Panel defaultSize={20} minSize={15}>
-            <div className="h-full flex flex-col border-r border-border bg-card">
-              <div className="p-2 border-b border-border flex items-center gap-2">
-                <Layers size={16} />
-                <span className="text-xs font-semibold uppercase">Outliner</span>
-              </div>
-              <div className="p-4 text-sm text-muted-foreground">
-                Scene Hierarchy will be here.
-              </div>
-            </div>
+            <Outliner />
           </Panel>
 
           <PanelResizeHandle className="w-1 bg-border hover:bg-primary transition-colors" />
@@ -43,15 +36,7 @@ const App: React.FC = () => {
 
           {/* Right Sidebar (Inspector) */}
           <Panel defaultSize={20} minSize={15}>
-            <div className="h-full flex flex-col border-l border-border bg-card">
-               <div className="p-2 border-b border-border flex items-center gap-2">
-                <Settings size={16} />
-                <span className="text-xs font-semibold uppercase">Inspector</span>
-              </div>
-               <div className="p-4 text-sm text-muted-foreground">
-                Properties will be here.
-              </div>
-            </div>
+            <Inspector />
           </Panel>
         </PanelGroup>
       </div>
