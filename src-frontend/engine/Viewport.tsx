@@ -1,11 +1,19 @@
 import React, { useEffect, useRef } from 'react';
 import { Engine, Scene, Vector3, HemisphericLight, FreeCamera, MeshBuilder } from '@babylonjs/core';
-import { World, createGameEntity } from '../ecs';
+import { World, createGameEntity, TransformComponent } from '../ecs';
 import { createRenderSystem, entityMeshMap } from '../ecs/systems/RenderSystem';
 import { createGizmoSystem } from '../ecs/systems/GizmoSystem';
+import { useEditorStore } from '../store';
 
 const Viewport: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
+  const simStateRef = useRef(useEditorStore.getState().simulationState);
+
+  useEffect(() => {
+      return useEditorStore.subscribe(state => {
+          simStateRef.current = state.simulationState;
+      });
+  }, []);
 
   useEffect(() => {
     if (!canvasRef.current) return;
@@ -37,12 +45,20 @@ const Viewport: React.FC = () => {
 
     engine.runRenderLoop(() => {
       // 1. Sync Gizmo changes (Mesh -> ECS)
-      syncGizmosToECS();
+      if (simStateRef.current !== 'playing') {
+         syncGizmosToECS();
+      }
 
-      // 2. Run ECS Systems (ECS Logic & ECS -> Mesh)
+      // 2. Gameplay Logic (Simulation)
+      if (simStateRef.current === 'playing') {
+          // Simple rotation for Entity 1 (Sphere)
+          TransformComponent.rotY[0] += 0.01;
+      }
+
+      // 3. Run ECS Systems (ECS Logic & ECS -> Mesh)
       renderSystem(World);
 
-      // 3. Render Scene
+      // 4. Render Scene
       scene.render();
     });
 
@@ -65,16 +81,6 @@ const Viewport: React.FC = () => {
           try {
              const { type, id } = JSON.parse(data);
              if (type === 'asset') {
-                // Raycast to find drop position on ground
-                // Ideally, we raycast against the scene.
-                // For simplicity, we drop at (0, 0, 0) or slightly offset if possible,
-                // but since we don't have easy access to the engine/scene instance here outside the useEffect,
-                // we will rely on a generic strategy or just add it at 0,0,0.
-
-                // Note: To do proper raycasting, we need the scene instance.
-                // We could move the logic inside, but React event handlers are outside.
-                // Solution: Use a ref to store the scene/engine.
-
                 createGameEntity(World, [Math.random() * 4 - 2, 1, Math.random() * 4 - 2], id);
              }
           } catch (err) {

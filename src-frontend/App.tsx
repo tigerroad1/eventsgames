@@ -4,13 +4,20 @@ import Viewport from './engine/Viewport';
 import Outliner from './components/Outliner';
 import Inspector from './components/Inspector';
 import AssetBrowser from './components/AssetBrowser';
+import Toolbar from './components/Toolbar';
 
 const App: React.FC = () => {
   return (
     <div className="h-screen w-screen bg-background text-foreground flex flex-col overflow-hidden dark">
-      {/* Top Bar / Menu (Placeholder) */}
-      <header className="h-10 border-b border-border flex items-center px-4 bg-card">
-        <span className="font-bold text-sm">Darkgame Editor</span>
+      {/* Top Bar */}
+      <header className="flex flex-col">
+          <div className="h-8 border-b border-border flex items-center px-4 bg-card text-xs text-muted-foreground">
+            <span className="font-bold mr-4 text-foreground">Darkgame Editor</span>
+            <span>File</span>
+            <span className="ml-2">Edit</span>
+            <span className="ml-2">View</span>
+          </div>
+          <Toolbar />
       </header>
 
       {/* Main Workspace */}

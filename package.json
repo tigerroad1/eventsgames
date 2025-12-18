@@ -12,6 +12,7 @@
   "dependencies": {
     "@babylonjs/core": "^7.0.0",
     "@babylonjs/loaders": "^7.0.0",
+    "@babylonjs/serializers": "^7.54.3",
     "@tauri-apps/api": "^2.0.0",
     "@tauri-apps/plugin-shell": "^2.0.0",
     "bitecs": "^0.3.40",
