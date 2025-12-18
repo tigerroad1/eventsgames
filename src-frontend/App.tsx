@@ -3,6 +3,7 @@ import { Panel, PanelGroup, PanelResizeHandle } from 'react-resizable-panels';
 import Viewport from './engine/Viewport';
 import Outliner from './components/Outliner';
 import Inspector from './components/Inspector';
+import AssetBrowser from './components/AssetBrowser';
 
 const App: React.FC = () => {
   return (
@@ -17,7 +18,15 @@ const App: React.FC = () => {
         <PanelGroup direction="horizontal">
           {/* Left Sidebar (Explorer/Outliner) */}
           <Panel defaultSize={20} minSize={15}>
-            <Outliner />
+             <PanelGroup direction="vertical">
+                 <Panel defaultSize={60} minSize={30}>
+                    <Outliner />
+                 </Panel>
+                 <PanelResizeHandle className="h-1 bg-border hover:bg-primary transition-colors" />
+                 <Panel defaultSize={40} minSize={20}>
+                    <AssetBrowser />
+                 </Panel>
+             </PanelGroup>
           </Panel>
 
           <PanelResizeHandle className="w-1 bg-border hover:bg-primary transition-colors" />

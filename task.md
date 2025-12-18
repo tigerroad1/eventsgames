@@ -16,8 +16,8 @@ Ce document liste toutes les tâches de développement du projet Darkgame, organ
 | **P2.1** | Core UI | Implémenter l'interface utilisateur avec les panneaux redimensionnables. | Haute | Développeur Frontend | Terminé |
 | **P2.2** | Core UI | Développer l'**Outliner** (Zone B) pour afficher la hiérarchie des entités. | Moyenne | Développeur Frontend | Terminé |
 | **P2.3** | Core UI | Développer l'**Inspector** (Zone D) pour afficher et modifier les Composants ECS. | Moyenne | Développeur Frontend | Terminé |
-| **P2.4** | Core UI | Implémenter les Gizmos de manipulation (Move, Rotate, Scale) dans le Viewport. | Haute | Développeur 3D | À faire |
-| **P2.5** | Core UI | Développer la fonctionnalité de glisser-déposer d'un asset simple du Asset Browser vers le Viewport. | Moyenne | Développeur Frontend | À faire |
+| **P2.4** | Core UI | Implémenter les Gizmos de manipulation (Move, Rotate, Scale) dans le Viewport. | Haute | Développeur 3D | Terminé |
+| **P2.5** | Core UI | Développer la fonctionnalité de glisser-déposer d'un asset simple du Asset Browser vers le Viewport. | Moyenne | Développeur Frontend | Terminé |
 | **P3.1** | Asset Pipeline | Développer le *crate* Rust pour la lecture et le traitement des fichiers **FBX/OBJ**. | Critique | Développeur Backend | À faire |
 | **P3.2** | Asset Pipeline | Implémenter la communication Tauri pour l'importation de fichiers volumineux. | Haute | Développeur Fullstack | À faire |
 | **P3.3** | Asset Pipeline | Développer la logique de normalisation du squelette et de correction d'échelle/orientation. | Critique | Développeur Backend | À faire |

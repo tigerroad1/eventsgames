@@ -3,7 +3,7 @@ import { Scene, Mesh, MeshBuilder, Vector3, AbstractMesh } from '@babylonjs/core
 import { TransformComponent, MeshComponent } from '../index';
 
 // Map to store relationships between ECS entities (eid) and Babylon meshes
-const entityMeshMap = new Map<number, AbstractMesh>();
+export const entityMeshMap = new Map<number, AbstractMesh>();
 
 export const createRenderSystem = (scene: Scene) => {
   // Queries
