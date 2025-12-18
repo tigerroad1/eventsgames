@@ -18,11 +18,11 @@ Ce document liste toutes les tâches de développement du projet Darkgame, organ
 | **P2.3** | Core UI | Développer l'**Inspector** (Zone D) pour afficher et modifier les Composants ECS. | Moyenne | Développeur Frontend | Terminé |
 | **P2.4** | Core UI | Implémenter les Gizmos de manipulation (Move, Rotate, Scale) dans le Viewport. | Haute | Développeur 3D | Terminé |
 | **P2.5** | Core UI | Développer la fonctionnalité de glisser-déposer d'un asset simple du Asset Browser vers le Viewport. | Moyenne | Développeur Frontend | Terminé |
-| **P3.1** | Asset Pipeline | Développer le *crate* Rust pour la lecture et le traitement des fichiers **FBX/OBJ**. | Critique | Développeur Backend | À faire |
-| **P3.2** | Asset Pipeline | Implémenter la communication Tauri pour l'importation de fichiers volumineux. | Haute | Développeur Fullstack | À faire |
+| **P3.1** | Asset Pipeline | Développer le *crate* Rust pour la lecture et le traitement des fichiers **FBX/OBJ**. | Critique | Développeur Backend | Terminé |
+| **P3.2** | Asset Pipeline | Implémenter la communication Tauri pour l'importation de fichiers volumineux. | Haute | Développeur Fullstack | Terminé |
 | **P3.3** | Asset Pipeline | Développer la logique de normalisation du squelette et de correction d'échelle/orientation. | Critique | Développeur Backend | À faire |
 | **P3.4** | Asset Pipeline | Implémenter la fonctionnalité d'exportation au format **GLTF/GLB**. | Moyenne | Développeur 3D | À faire |
-| **P3.5** | Asset Pipeline | Implémenter la sauvegarde et le chargement du projet au format `.ZIP` propriétaire. | Moyenne | Développeur Fullstack | À faire |
+| **P3.5** | Asset Pipeline | Implémenter la sauvegarde et le chargement du projet au format `.ZIP` propriétaire. | Moyenne | Développeur Fullstack | Terminé |
 | **P4.1** | Gameplay | Implémenter les contrôles de simulation (Lecture/Pause/Étape suivante). | Haute | Développeur Logique | À faire |
 | **P4.2** | Gameplay | Développer le système de **Retargeting Intelligent** pour les animations. | Critique | Développeur Logique | À faire |
 | **P4.3** | Gameplay | Implémenter le **Binding d'Animations** aux entrées utilisateur (clavier/manette) avec gestion du *cross-fading*. | Haute | Développeur Logique | À faire |
