@@ -12,7 +12,7 @@ Ce document liste toutes les tâches de développement du projet Darkgame, organ
 | **P1.2** | Core Engine | Configurer le rendu 3D de base (caméra, lumière par défaut, scène vide). | Haute | Développeur 3D | Terminé |
 | **P1.3** | Core Engine | Intégrer et configurer **BitECS** pour la gestion des entités. | Haute | Développeur Logique | Terminé |
 | **P1.4** | Core Engine | Créer les composants ECS de base (`TransformComponent`, `MeshComponent`). | Haute | Développeur Logique | Terminé |
-| **P1.5** | Core Engine | Développer le système de rendu ECS (synchronisation BitECS -> Babylon.js). | Haute | Développeur 3D | À faire |
+| **P1.5** | Core Engine | Développer le système de rendu ECS (synchronisation BitECS -> Babylon.js). | Haute | Développeur 3D | Terminé |
 | **P2.1** | Core UI | Implémenter l'interface utilisateur avec les panneaux redimensionnables. | Haute | Développeur Frontend | Terminé |
 | **P2.2** | Core UI | Développer l'**Outliner** (Zone B) pour afficher la hiérarchie des entités. | Moyenne | Développeur Frontend | À faire |
 | **P2.3** | Core UI | Développer l'**Inspector** (Zone D) pour afficher et modifier les Composants ECS. | Moyenne | Développeur Frontend | À faire |

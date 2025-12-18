@@ -6,18 +6,14 @@ export const World = createWorld();
 // --- Components ---
 
 // TransformComponent: Standard position, rotation, scale
-// Note: Rotation is stored as Euler angles (x, y, z) in radians for simplicity in this iteration,
-// but Quaternions (x, y, z, w) might be preferred for advanced physics/animation later.
+// We use explicit x, y, z fields for clarity and simpler access.
 export const TransformComponent = defineComponent({
-  position: [Types.f32, 3], // x, y, z
-  rotation: [Types.f32, 3], // x, y, z (Euler angles)
-  scale: [Types.f32, 3],    // x, y, z
+  posX: Types.f32, posY: Types.f32, posZ: Types.f32,
+  rotX: Types.f32, rotY: Types.f32, rotZ: Types.f32, // Euler angles in radians
+  sclX: Types.f32, sclY: Types.f32, sclZ: Types.f32,
 });
 
 // MeshComponent: Links an ECS entity to a visual mesh
-// Since BitECS components only store primitive types, we use an ID/Index approach.
-// - meshResourceId: Could be an index into an array of loaded Mesh assets or a unique ID.
-// - isVisible: Boolean flag (0 or 1).
 export const MeshComponent = defineComponent({
   meshResourceId: Types.ui32, // ID referencing the loaded Babylon mesh (mapped externally)
   isVisible: Types.ui8,       // 0 = hidden, 1 = visible
@@ -44,14 +40,18 @@ export const createGameEntity = (
   addComponent(world, MeshComponent, eid);
 
   // Set initial values
-  TransformComponent.position[eid][0] = position[0];
-  TransformComponent.position[eid][1] = position[1];
-  TransformComponent.position[eid][2] = position[2];
+  TransformComponent.posX[eid] = position[0];
+  TransformComponent.posY[eid] = position[1];
+  TransformComponent.posZ[eid] = position[2];
+
+  TransformComponent.rotX[eid] = 0;
+  TransformComponent.rotY[eid] = 0;
+  TransformComponent.rotZ[eid] = 0;
 
   // Default scale to 1,1,1
-  TransformComponent.scale[eid][0] = 1;
-  TransformComponent.scale[eid][1] = 1;
-  TransformComponent.scale[eid][2] = 1;
+  TransformComponent.sclX[eid] = 1;
+  TransformComponent.sclY[eid] = 1;
+  TransformComponent.sclZ[eid] = 1;
 
   MeshComponent.meshResourceId[eid] = meshResId;
   MeshComponent.isVisible[eid] = 1;
