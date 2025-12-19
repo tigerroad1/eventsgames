@@ -24,10 +24,10 @@ Ce document liste toutes les tâches de développement du projet Darkgame, organ
 | **P3.4** | Asset Pipeline | Implémenter la fonctionnalité d'exportation au format **GLTF/GLB**. | Moyenne | Développeur 3D | Terminé |
 | **P3.5** | Asset Pipeline | Implémenter la sauvegarde et le chargement du projet au format `.ZIP` propriétaire. | Moyenne | Développeur Fullstack | Terminé |
 | **P4.1** | Gameplay | Implémenter les contrôles de simulation (Lecture/Pause/Étape suivante). | Haute | Développeur Logique | Terminé |
-| **P4.2** | Gameplay | Développer le système de **Retargeting Intelligent** pour les animations. | Critique | Développeur Logique | À faire |
-| **P4.3** | Gameplay | Implémenter le **Binding d'Animations** aux entrées utilisateur (clavier/manette) avec gestion du *cross-fading*. | Haute | Développeur Logique | À faire |
-| **P4.4** | Gameplay | Développer le mode de simulation **TPS** (contrôleur de personnage, caméra TPS). | Haute | Développeur 3D | À faire |
-| **P4.5** | Gameplay | Intégrer le composant `ScriptComponent` de base. | Moyenne | Développeur Logique | À faire |
+| **P4.2** | Gameplay | Développer le système de **Retargeting Intelligent** pour les animations. | Critique | Développeur Logique | Terminé |
+| **P4.3** | Gameplay | Implémenter le **Binding d'Animations** aux entrées utilisateur (clavier/manette) avec gestion du *cross-fading*. | Haute | Développeur Logique | Terminé |
+| **P4.4** | Gameplay | Développer le mode de simulation **TPS** (contrôleur de personnage, caméra TPS). | Haute | Développeur 3D | Terminé |
+| **P4.5** | Gameplay | Intégrer le composant `ScriptComponent` de base. | Moyenne | Développeur Logique | Terminé |
 | **P5.1** | Advanced | Développer le module de **Level Design Modulaire**. | Moyenne | Développeur 3D | À faire |
 | **P5.2** | Advanced | Implémenter le **rendu instancié** pour les objets répétitifs. | Haute | Développeur 3D | À faire |
 | **P5.3** | Advanced | Optimisation finale des performances pour atteindre l'objectif de **60 FPS**. | Haute | Développeur 3D | À faire |
