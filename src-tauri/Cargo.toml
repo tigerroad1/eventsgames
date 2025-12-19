@@ -1,0 +1,24 @@
+[package]
+name = "darkgame"
+version = "0.1.0"
+description = "A hybrid 3D game editor"
+authors = ["you"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2.0.0", features = [] }
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tauri = { version = "2", default-features = false, features = ["custom-protocol", "wry"] }
+tauri-plugin-shell = "2"
+tobj = "4.0" # For OBJ loading
+# For FBX we might need a crate, but pure Rust FBX is rare or incomplete.
+# We will stub it or use a simple parser if available, but for now focus on OBJ/GLTF or just stubbing.
+zip = "0.6" # For project saving/loading
+
+[features]
+# this feature is used for production builds or when `devPath` points to the filesystem
+# DO NOT REMOVE!!
+custom-protocol = []
