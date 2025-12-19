@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Pause, Square, Download } from 'lucide-react';
+import { Play, Pause, Square, Download, Grid } from 'lucide-react';
 import { useEditorStore } from '../store';
 import { exportSceneToGLB } from '../utils/exporter';
 import { Engine } from '@babylonjs/core';
@@ -11,7 +11,7 @@ import { Engine } from '@babylonjs/core';
 // Using `Engine.LastCreatedScene` is a viable hack for a singleton editor scene.
 
 const Toolbar: React.FC = () => {
-    const { simulationState, setSimulationState } = useEditorStore();
+    const { simulationState, setSimulationState, snapToGrid, toggleSnapToGrid } = useEditorStore();
 
     const handleExport = () => {
         const scene = Engine.LastCreatedScene;
@@ -47,6 +47,16 @@ const Toolbar: React.FC = () => {
                     <Square size={16} fill={simulationState === 'stopped' ? "currentColor" : "none"} />
                 </button>
             </div>
+
+            <div className="w-px h-6 bg-border mx-2" />
+
+            <button
+                onClick={toggleSnapToGrid}
+                className={`p-1 rounded hover:bg-primary/20 ${snapToGrid ? 'text-blue-500' : ''}`}
+                title="Toggle Snap to Grid"
+            >
+                <Grid size={16} fill={snapToGrid ? "currentColor" : "none"} />
+            </button>
 
             <div className="w-px h-6 bg-border mx-2" />
 

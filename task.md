@@ -28,11 +28,11 @@ Ce document liste toutes les tâches de développement du projet Darkgame, organ
 | **P4.3** | Gameplay | Implémenter le **Binding d'Animations** aux entrées utilisateur (clavier/manette) avec gestion du *cross-fading*. | Haute | Développeur Logique | Terminé |
 | **P4.4** | Gameplay | Développer le mode de simulation **TPS** (contrôleur de personnage, caméra TPS). | Haute | Développeur 3D | Terminé |
 | **P4.5** | Gameplay | Intégrer le composant `ScriptComponent` de base. | Moyenne | Développeur Logique | Terminé |
-| **P5.1** | Advanced | Développer le module de **Level Design Modulaire**. | Moyenne | Développeur 3D | À faire |
-| **P5.2** | Advanced | Implémenter le **rendu instancié** pour les objets répétitifs. | Haute | Développeur 3D | À faire |
-| **P5.3** | Advanced | Optimisation finale des performances pour atteindre l'objectif de **60 FPS**. | Haute | Développeur 3D | À faire |
-| **P5.4** | Advanced | Tests Système et UAT (basés sur le Plan de Tests v1.1). | Haute | Équipe QA | À faire |
-| **P5.5** | Advanced | Finalisation de la documentation utilisateur et technique. | Moyenne | Rédacteur Technique | À faire |
+| **P5.1** | Advanced | Développer le module de **Level Design Modulaire**. | Moyenne | Développeur 3D | Terminé |
+| **P5.2** | Advanced | Implémenter le **rendu instancié** pour les objets répétitifs. | Haute | Développeur 3D | Terminé |
+| **P5.3** | Advanced | Optimisation finale des performances pour atteindre l'objectif de **60 FPS**. | Haute | Développeur 3D | Terminé |
+| **P5.4** | Advanced | Tests Système et UAT (basés sur le Plan de Tests v1.1). | Haute | Équipe QA | Terminé |
+| **P5.5** | Advanced | Finalisation de la documentation utilisateur et technique. | Moyenne | Rédacteur Technique | Terminé |
 
 ***
 

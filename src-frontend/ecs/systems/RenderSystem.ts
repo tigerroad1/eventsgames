@@ -5,11 +5,28 @@ import { TransformComponent, MeshComponent } from '../index';
 // Map to store relationships between ECS entities (eid) and Babylon meshes
 export const entityMeshMap = new Map<number, AbstractMesh>();
 
+// Cache for source meshes (for instancing)
+const sourceMeshes = new Map<number, Mesh>();
+
 export const createRenderSystem = (scene: Scene) => {
   // Queries
   const renderQuery = defineQuery([TransformComponent, MeshComponent]);
   const enterRenderQuery = enterQuery(renderQuery);
   const exitRenderQuery = exitQuery(renderQuery);
+
+  // Initialize Source Meshes (Hidden)
+  // In a real system, these are loaded from Asset Manager.
+  // ID 0 = Box, ID 1 = Sphere
+  if (!sourceMeshes.has(0)) {
+      const box = MeshBuilder.CreateBox("source_box", { size: 1 }, scene);
+      box.isVisible = false;
+      sourceMeshes.set(0, box);
+  }
+  if (!sourceMeshes.has(1)) {
+      const sphere = MeshBuilder.CreateSphere("source_sphere", { diameter: 1 }, scene);
+      sphere.isVisible = false;
+      sourceMeshes.set(1, sphere);
+  }
 
   return (world: IWorld) => {
     // 1. Handle New Entities (Enter)
@@ -18,14 +35,20 @@ export const createRenderSystem = (scene: Scene) => {
       const eid = entitesEntered[i];
       const resourceId = MeshComponent.meshResourceId[eid];
 
-      // For now, create a simple box or sphere based on ID.
-      // In a real asset pipeline, this would look up a loaded asset.
-      let mesh: Mesh;
-      if (resourceId === 1) {
-          mesh = MeshBuilder.CreateSphere(`entity_${eid}`, { diameter: 1 }, scene);
+      const source = sourceMeshes.get(resourceId);
+
+      let mesh: AbstractMesh;
+
+      if (source) {
+          // Use InstancedMesh for performance (P5.2)
+          mesh = source.createInstance(`entity_${eid}`);
       } else {
-          mesh = MeshBuilder.CreateBox(`entity_${eid}`, { size: 1 }, scene);
+          // Fallback
+          mesh = MeshBuilder.CreateBox(`entity_${eid}_fallback`, { size: 1 }, scene);
       }
+
+      // We must handle metadata or something to ensure we can identify it later if needed.
+      // Instances share geometry/material.
 
       entityMeshMap.set(eid, mesh);
     }

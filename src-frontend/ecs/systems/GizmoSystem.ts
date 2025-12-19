@@ -23,6 +23,25 @@ export const createGizmoSystem = (scene: Scene, getMeshByEid: (eid: number) => A
     } else {
         gizmoManager.attachToMesh(null);
     }
+
+    // Update snapping
+    if (state.snapToGrid) {
+        gizmoManager.positionGizmoEnabled = true;
+        if (gizmoManager.gizmos.positionGizmo) {
+             gizmoManager.gizmos.positionGizmo.snapDistance = 1.0;
+        }
+        // Also enable rotation snap
+        if (gizmoManager.gizmos.rotationGizmo) {
+             gizmoManager.gizmos.rotationGizmo.snapDistance = Math.PI / 4;
+        }
+    } else {
+        if (gizmoManager.gizmos.positionGizmo) {
+             gizmoManager.gizmos.positionGizmo.snapDistance = 0;
+        }
+        if (gizmoManager.gizmos.rotationGizmo) {
+             gizmoManager.gizmos.rotationGizmo.snapDistance = 0;
+        }
+    }
   });
 
   // Function to manually sync the Gizmo-modified mesh transform back to ECS.

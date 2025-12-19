@@ -7,6 +7,8 @@ interface EditorState {
   selectEntity: (eid: number | null) => void;
   simulationState: SimulationState;
   setSimulationState: (state: SimulationState) => void;
+  snapToGrid: boolean;
+  toggleSnapToGrid: () => void;
 }
 
 export const useEditorStore = create<EditorState>((set) => ({
@@ -14,4 +16,6 @@ export const useEditorStore = create<EditorState>((set) => ({
   selectEntity: (eid) => set({ selectedEntity: eid }),
   simulationState: 'stopped',
   setSimulationState: (state) => set({ simulationState: state }),
+  snapToGrid: false,
+  toggleSnapToGrid: () => set((state) => ({ snapToGrid: !state.snapToGrid })),
 }));
