@@ -1,0 +1,3 @@
+## 2025-05-24 - [JSON Image Optimization]
+**Learning:** Storing base64 encoded images directly within JSON data files significantly bloats file size, leading to performance inefficiencies in parsing and loading. Extracting these images to external files and referencing them via path is a straightforward optimization that yields massive gains (e.g., reducing file size from ~MBs to ~KBs for the JSON itself) and adheres to better data separation practices.
+**Action:** Always inspect large JSON data files for embedded binary data like base64 strings. Prioritize extracting such data to external assets to improve load times and manageability.
