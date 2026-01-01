@@ -1,0 +1,3 @@
+## 2024-05-24 - [JSON Payload Optimization via Base64 Extraction]
+**Learning:** Storing images as Base64 strings directly within JSON data files significantly bloats the file size and can impact parsing performance and bandwidth. Extracting these images to static assets and referencing them by path is a highly effective optimization for data-heavy applications.
+**Action:** When encountering data files with embedded binary data (like images), always consider extracting them to separate files. This improves data manageability, reduces payload size, and leverages browser caching for static assets. In this specific case, extracting Base64 images from JSON files reduced their size drastically and separated data from assets.
