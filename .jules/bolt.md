@@ -1,0 +1,5 @@
+## 2025-01-10 - JSON Data Optimization: Trailing Commas and Base64 Whitespace
+
+**Learning:** The codebase contains several JSON files (`sorties_2025-2026.json`, `jeux_2025.json`, `Sorties2025`, `sport.json`, `strategie.json`) that are technically invalid JSON due to trailing commas. This prevents standard JSON parsers (like Python's `json` module) from reading them. Additionally, embedded Base64 strings in these files, although mostly contiguous, were extracted with trailing newlines when verifying, and the task was to ensure internal whitespace is stripped.
+
+**Action:** When working with data files in this repository, always be prepared to handle invalid JSON (trailing commas). I implemented a fix using regex to remove trailing commas before parsing. For future optimizations, I should check for this pattern. Also, while I didn't find internal whitespace in the Base64 strings I sampled, enforcing a strip of whitespace is a good practice for file size optimization and data hygiene. The files `consoles` and `online` were valid minified JSON and did not require trailing comma fixes.
