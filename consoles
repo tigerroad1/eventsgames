@@ -35,7 +35,10 @@
         {
             "name": "Nintendo Switch",
             "manufacturer": "Nintendo",
-            "platforms": ["Nintendo Switch", "Nintendo Switch Lite"],
+            "platforms": [
+                "Nintendo Switch",
+                "Nintendo Switch Lite"
+            ],
             "url": "https://www.nintendo.com/switch/",
             "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRiPTf2UFD9d9aHLxaJyUfzZP6KqlxnkWv1w&s",
             "description": "La Nintendo Switch est une console hybride qui peut être utilisée comme console de salon ou portable, offrant une grande flexibilité et une vaste bibliothèque de jeux exclusifs."
