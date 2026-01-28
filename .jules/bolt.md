@@ -1,0 +1,3 @@
+## 2025-01-28 - Repository Size Optimization
+**Learning:** Duplicate large JSON files (`jeux_2025.json`, `Sorties2025`) were present in the repository, significantly increasing its size (doubling the necessary data). They were confirmed to be identical to `sorties_2025-2026.json`.
+**Action:** Always verify file contents with `diff` before assuming they are different data sets. Deleting duplicates is a high-impact performance improvement for repository operations (clone/fetch time). Renaming `consoles` and `online` to include `.json` extension improves compatibility with external tools and servers.
