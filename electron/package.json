@@ -1,0 +1,15 @@
+{
+  "name": "magic-build-electron-agents",
+  "version": "0.0.0",
+  "main": "architect-agent/main.js",
+  "scripts": {
+    "start:architect": "electron architect-agent/main.js",
+    "start:developer": "electron developer-agent/main.js"
+  },
+  "dependencies": {
+    "electron": "^27.0.0",
+    "express": "^4.18.0",
+    "node-pty": "^0.11.0",
+    "cors": "^2.8.5"
+  }
+}
