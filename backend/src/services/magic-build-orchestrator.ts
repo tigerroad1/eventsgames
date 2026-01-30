@@ -2,16 +2,19 @@ import path from 'path';
 import fs from 'fs/promises';
 import { AgentManager } from './agent-manager.js';
 import { SkillService } from './skill-service.js';
+import { SelfHealingValidator } from './self-healing-validator.js';
 import { AgentTask } from '../types/index.js';
 
 export class MagicBuildOrchestrator {
     private agentManager: AgentManager;
     private skillService: SkillService;
+    private validator: SelfHealingValidator;
     private projectsDir = process.env.PROJECTS_DIR || path.resolve('projects');
 
     constructor() {
         this.agentManager = new AgentManager();
         this.skillService = new SkillService();
+        this.validator = new SelfHealingValidator();
     }
 
     async runFullMagicBuild(params: { technology: string; description: string; projectId?: string }) {
@@ -59,10 +62,28 @@ export class MagicBuildOrchestrator {
         const devResult = await this.agentManager.sendTask('developer', developerTask);
         console.log('Developer started:', devResult);
 
+        // 5. Validation Loop (Async)
+        this.runValidationLoop(projectPath).catch(console.error);
+
         return {
             projectId,
             projectPath,
             status: 'in_progress'
         };
+    }
+
+    private async runValidationLoop(projectPath: string) {
+        // Wait for dev agent (mock delay)
+        await new Promise(resolve => setTimeout(resolve, 2000));
+
+        const result = await this.validator.validate(projectPath);
+        if (!result.success) {
+            console.log('Validation failed, attempting self-healing...');
+            for (const error of result.errors) {
+                await this.validator.attemptFix(error, projectPath);
+            }
+        } else {
+            console.log('Validation passed!');
+        }
     }
 }
