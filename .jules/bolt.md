@@ -1,0 +1,3 @@
+## 2024-05-23 - [Optimization] Extracted Base64 images from JSON
+**Learning:** The repository contained several JSON files (some without extension) that embedded large Base64 encoded images. This bloated the file sizes (e.g., from ~126KB to ~6KB) and likely impacted parsing performance. Additionally, several JSON files contained trailing commas which are invalid in standard JSON and caused parsing errors.
+**Action:** Extracted Base64 strings into separate image files in an `images/` directory. Updated JSON files to reference these images by path. Fixed JSON syntax errors by removing trailing commas. Future data additions should reference external assets instead of embedding them.
