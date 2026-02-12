@@ -1,0 +1,64 @@
+{
+    "video_game_media": [
+        {
+            "name": "IGN",
+            "description": "IGN est l'un des principaux sites d'actualités sur les jeux vidéo, les films, la télévision et la culture geek.",
+            "logo": "data:image/png;base64,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",
+            "url": "https://www.ign.com"
+        },
+        {
+            "name": "GameSpot",
+            "description": "GameSpot propose des actualités, des tests, des vidéos et des guides sur les jeux vidéo.",
+            "logo": "images/fb0a9d4bf034a8e09cbe00d9f5ff3523.png",
+            "url": "https://www.gamespot.com"
+        },
+        {
+            "name": "Polygon",
+            "description": "Polygon couvre les jeux vidéo, les films, les séries télévisées et la culture pop.",
+            "logo": "images/5d42430fc83718756d8e86e62c7a742c.png",
+            "url": "https://www.polygon.com"
+        },
+        {
+            "name": "Eurogamer",
+            "description": "Eurogamer fournit des tests, des actualités et des analyses sur les jeux vidéo.",
+            "logo": "images/1f381a4d05bad924cee752d21ddff171.png",
+            "url": "https://www.eurogamer.net"
+        },
+        {
+            "name": "Kotaku",
+            "description": "Kotaku est un blog consacré aux jeux vidéo et à la culture gamer.",
+            "logo": "images/1aefcb842e7c9237708c84dcfc2abff6.jpg",
+            "url": "https://kotaku.com"
+        },
+        {
+            "name": "Jeuxvideo.com",
+            "description": "Jeuxvideo.com est un site francophone leader sur les actualités et les tests de jeux vidéo.",
+            "logo": "images/f7dc4d5232fdcff2d4623f4ec9f38e56.png",
+            "url": "https://www.jeuxvideo.com"
+        },
+        {
+            "name": "Game Informer",
+            "description": "Game Informer est un magazine couvrant l'industrie du jeu vidéo avec des tests, des actualités et des vidéos.",
+            "logo": "images/9457eea0808c49b4dedecfd9b697c0fb.jpg",
+            "url": "https://www.gameinformer.com"
+        },
+        {
+            "name": "VG247",
+            "description": "VG247 offre des actualités, des tests et des guides sur les jeux vidéo.",
+            "logo": "images/c06207087a7bec5f9a14b16d8246a63a.png",
+            "url": "https://www.vg247.com"
+        },
+        {
+            "name": "PC Gamer",
+            "description": "PC Gamer se concentre sur les jeux PC, offrant des actualités, des tests et des guides.",
+            "logo": "images/9021d2b76b2e2e2e5a14b16833e81aca.png",
+            "url": "https://www.pcgamer.com"
+        },
+        {
+            "name": "Rock Paper Shotgun",
+            "description": "Rock Paper Shotgun est spécialisé dans les jeux PC avec des analyses et des critiques détaillées.",
+            "logo": "images/e1be8a01c428fb031b7cf35fcc965b4c.png",
+            "url": "https://www.rockpapershotgun.com"
+        }
+    ]
+}
